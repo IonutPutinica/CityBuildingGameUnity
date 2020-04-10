@@ -10,7 +10,11 @@ public class CameraController : MonoBehaviour
 
     private void LateUpdate()
     {
-        Camera.main.orthographicSize -= Input.GetAxis("Mouse ScrollWheel");
+        //10f *Camera.main.orthographicSize*.1f, because otherwise, the closer you zoom in, the zoom speed would get exponentially bigger, so this keeps it constant
+        //in addition, this helps the camera from getting flipped when all the way in
+        //the above comment is made redundant by the fact that a constraint is added with the Clamp function, that doesn't allow the camera to exceed certain values
+       Camera.main.orthographicSize= Mathf.Clamp(Camera.main.orthographicSize -= 
+           Input.GetAxis("Mouse ScrollWheel")*(10f *Camera.main.orthographicSize*.1f),2.5f, 50f);
     }
 
     // Start is called before the first frame update
