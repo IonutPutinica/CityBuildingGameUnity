@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 78
+  controlID: 106
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 108
+  controlID: 107
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 109
+  controlID: 108
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,19 +336,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\CityBuildingGameUnity\CityBuildingGameUnity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 700a0000
-    m_LastClickedID: 2672
+    m_SelectedIDs: 9c0b0000
+    m_LastClickedID: 2972
     m_ExpandedIDs: 00000000780900009c0b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -496,9 +496,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: bcfbffffc8fbffffd4fbffffd6fbffff
+      m_SelectedIDs: e2f6ffff
+      m_LastClickedID: -2334
+      m_ExpandedIDs: 1af7ffffd6fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -553,9 +553,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 36.112667, y: -76.67569, z: 12.49398}
+    m_Target: {x: -0.15984732, y: 1.623268, z: 0.81184745}
     speed: 2
-    m_Value: {x: 36.112667, y: -76.67569, z: 12.49398}
+    m_Value: {x: -0.15984732, y: 1.623268, z: 0.81184745}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -583,13 +583,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.07601008, y: 0.89844555, z: -0.3967199, w: 0.17213765}
+    m_Target: {x: 0.2374949, y: 0.47342774, z: -0.13424958, w: 0.8375198}
     speed: 2
-    m_Value: {x: 0.07601008, y: 0.89844555, z: -0.3967199, w: 0.17213765}
+    m_Value: {x: 0.2374949, y: 0.47342774, z: -0.13424958, w: 0.8375198}
   m_Size:
-    m_Target: 158.69424
+    m_Target: 0.8786132
     speed: 2
-    m_Value: 158.69424
+    m_Value: 0.8786132
   m_Ortho:
     m_Target: 0
     speed: 2
