@@ -294,7 +294,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Farm ($15)
 --- !u!222 &53424898
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Factory ($20)
 --- !u!222 &363764731
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -897,8 +897,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 156.39, y: 28.41}
-  m_SizeDelta: {x: 312.89, y: 56.81}
+  m_AnchoredPosition: {x: 197.41, y: 29.19}
+  m_SizeDelta: {x: 394.92, y: 58.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &739736651
 MonoBehaviour:
@@ -1026,7 +1026,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Road (5$)
 --- !u!222 &774550258
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1194,7 +1194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: House ($10)
 --- !u!222 &1120050558
 CanvasRenderer:
   m_ObjectHideFlags: 0
