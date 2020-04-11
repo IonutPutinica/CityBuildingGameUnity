@@ -32,6 +32,8 @@ public class City : MonoBehaviour
         CalculateFood();
         CalculateCash();
         Debug.Log("Day ended.");
+        //Testing method!
+        Debug.LogFormat("Jobs: {0}/{1}, Cash: {2}, pop: {3}/{4}, Food: {5}", JobsCurrent, JobsCeiling, Cash, PopulationCurrent, PopulationCeiling);
     }
 
     void CalculateJobs()
