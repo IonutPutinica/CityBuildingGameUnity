@@ -27,7 +27,9 @@ public class City : MonoBehaviour
    public void EndTurn()
     {
         Day++;
+        CalculatePopulation();
         CalculateJobs();
+        CalculateFood();
         CalculateCash();
         Debug.Log("Day ended.");
     }
@@ -43,5 +45,32 @@ public class City : MonoBehaviour
     {
         //each job gives the city $2
         Cash += JobsCurrent * 2;
+    }
+
+    void CalculateFood()
+    {
+        //each farm gives the player 4 extra food
+        Food += buildingCounts[1] * 4f;
+    }
+
+    void CalculatePopulation()
+    {
+        //every house gives a possible 5 extra population
+        PopulationCeiling = buildingCounts[0] * 5;
+        //the below part calculates if the player gains population or not
+        if(Food>=PopulationCurrent && PopulationCurrent< PopulationCeiling)
+        {
+            //feeding the current population
+            Food -= PopulationCurrent*.25f;
+            //what is left over, can go towards creating new population
+            PopulationCurrent = Mathf.Min(PopulationCurrent+=Food*.25f, PopulationCeiling);
+
+        }
+
+        //deleting the population that "starved to death" - haha rip
+        else if(Food<PopulationCurrent)
+        {
+            PopulationCurrent -= (PopulationCurrent - Food) * 5f;
+        }
     }
 }
