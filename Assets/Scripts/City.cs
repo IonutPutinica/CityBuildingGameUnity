@@ -16,8 +16,11 @@ public class City : MonoBehaviour
 
     public int[] buildingCounts = new int[3];
 
+    private UIController uiController;
+
     void Start()
     {
+        uiController = GetComponent<UIController>();
         Cash = 10000;
         Food = 6;
         JobsCeiling = 10;
@@ -27,13 +30,17 @@ public class City : MonoBehaviour
    public void EndTurn()
     {
         Day++;
+        CalculateCash();
         CalculatePopulation();
         CalculateJobs();
         CalculateFood();
-        CalculateCash();
         Debug.Log("Day ended.");
+        uiController.UpdateCityData();
+        uiController.UpdateDayCount();
         //Testing method!
-        Debug.LogFormat("Jobs: {0}/{1}, Cash: {2}, pop: {3}/{4}, Food: {5}", JobsCurrent, JobsCeiling, Cash, PopulationCurrent, PopulationCeiling);
+        Debug.LogFormat
+            ("Jobs: {0}/{1}, Cash: {2}, pop: {3}/{4}, Food: {5}",
+            JobsCurrent, JobsCeiling, Cash, PopulationCurrent, PopulationCeiling, Food);
     }
 
     void CalculateJobs()
