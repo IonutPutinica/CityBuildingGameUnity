@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\City.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/CityBuildingGameUnity/CityBuildingGameUnity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
