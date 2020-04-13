@@ -14,7 +14,7 @@ public class City : MonoBehaviour
     public int JobsCeiling { get; set; }
     public float Food { get; set; }
 
-    public int[] buildingCounts = new int[3];
+    public int[] buildingCounts = new int[4];
 
     private UIController uiController;
 
@@ -46,7 +46,7 @@ public class City : MonoBehaviour
     void CalculateJobs()
     {
         //each factory gives the city a value of 10 jobs - this is how the job limit is defined
-        JobsCeiling = buildingCounts[2] * 10;
+        JobsCeiling = buildingCounts[3] * 10;
         JobsCurrent = Mathf.Min((int)PopulationCurrent, JobsCeiling);
     }
 
@@ -59,7 +59,7 @@ public class City : MonoBehaviour
     void CalculateFood()
     {
         //each farm gives the player 4 extra food
-        Food += buildingCounts[1] * 4f;
+        Food += buildingCounts[2] * 4f;
     }
 
     void CalculatePopulation()

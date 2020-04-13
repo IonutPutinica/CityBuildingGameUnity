@@ -1336,10 +1336,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79db881e3b981e4585c13535565ac37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  city: {fileID: 0}
-  uiController: {fileID: 0}
-  buildings: []
-  board: {fileID: 0}
+  city: {fileID: 723922310}
+  uiController: {fileID: 723922312}
+  buildings:
+  - {fileID: 114319720474069126, guid: 28f01293f73056d429f8276808124e5b, type: 3}
+  - {fileID: 1279738350943352810, guid: b8218c01511372747ae108217bc0dbb4, type: 3}
+  - {fileID: 368600915848476322, guid: f1a80aec7e0552e489d87a054afb3096, type: 3}
+  - {fileID: 5657410553068619127, guid: ded01551a05f81349aa35cba38cb2427, type: 3}
+  board: {fileID: 845623446}
 --- !u!1 &1097612323
 GameObject:
   m_ObjectHideFlags: 0
