@@ -25,7 +25,8 @@ public class BuildingHandler : MonoBehaviour
         {
             Vector3 gridPosition = board.CalculateGridPosition(hit.point);
             //build a building if there is not a building at that position
-            if (!board.CheckForBuildingAtPosition(gridPosition))
+            //in addition, it checks if the mouse is clicked over a game object (UI) - so it doesn't build when a user selects a building type for exameple
+            if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject() &&!board.CheckForBuildingAtPosition(gridPosition))
             {
                 //do I have enough cash to build it??
                 if(city.Cash>=selectedBuilding.cost)
