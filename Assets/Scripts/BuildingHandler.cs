@@ -16,6 +16,21 @@ public class BuildingHandler : MonoBehaviour
     private Board board;
     private Building selectedBuilding;
 
+    // Update is called once per frame
+    void Update()
+    {
+        //user can hold shift to build multiple buildings
+        if(Input.GetMouseButton(0) && Input.GetKey(KeyCode.LeftShift) && selectedBuilding!=null)
+        {
+            InteractWithBoard();
+        }
+        //it checks if the mouse is clicked, but it only works if a building is pre-selected
+        else if (Input.GetMouseButtonDown(0) && selectedBuilding != null)
+        {
+            InteractWithBoard();
+        }
+    }
+
     void InteractWithBoard()
     {
         //generates a ray at the clicked position of the mouse
@@ -43,15 +58,7 @@ public class BuildingHandler : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //it checks if the mouse is clicked, but it only works if a building is pre-selected
-        if(Input.GetMouseButtonDown(0) && selectedBuilding!=null)
-        {
-            InteractWithBoard();
-        }
-    }
+    
 
     public void EnableBuilder(int building)
     {
