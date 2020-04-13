@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 22823922}
   - component: {fileID: 22823921}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,7 +190,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 22823922}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 845623447}
+        m_MethodName: EnableBuilder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &22823922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -735,7 +746,7 @@ GameObject:
   - component: {fileID: 570798044}
   - component: {fileID: 570798043}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Farm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -800,7 +811,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 570798044}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 845623447}
+        m_MethodName: EnableBuilder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &570798044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,7 +871,7 @@ GameObject:
   - component: {fileID: 602554078}
   - component: {fileID: 602554077}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Factory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -914,7 +936,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 602554078}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 845623447}
+        m_MethodName: EnableBuilder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &602554078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1199,6 +1232,7 @@ GameObject:
   - component: {fileID: 845623443}
   - component: {fileID: 845623442}
   - component: {fileID: 845623446}
+  - component: {fileID: 845623447}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1290,6 +1324,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc042f6b94360624b99f3f94cd8a13b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &845623447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845623441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79db881e3b981e4585c13535565ac37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  city: {fileID: 0}
+  uiController: {fileID: 0}
+  buildings: []
+  board: {fileID: 0}
 --- !u!1 &1097612323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1555,7 @@ GameObject:
   - component: {fileID: 1202226171}
   - component: {fileID: 1202226170}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1570,7 +1620,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1202226171}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 845623447}
+        m_MethodName: EnableBuilder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1202226171
 MonoBehaviour:
   m_ObjectHideFlags: 0
