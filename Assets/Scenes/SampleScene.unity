@@ -623,7 +623,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.25
-  m_Text: "Cash: $200 (+$30)\nPopulation: 20/25 \nFood: 79\nJobs: 20/30"
+  m_Text: 'Cash: $50 (+$0)
+
+    Population: 0/0
+
+    Food: 0
+
+    Jobs: 0/0'
 --- !u!222 &544783323
 CanvasRenderer:
   m_ObjectHideFlags: 0
