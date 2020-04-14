@@ -21,9 +21,9 @@ public class City : MonoBehaviour
     void Start()
     {
         uiController = GetComponent<UIController>();
-        Cash = 10000;
-        Food = 6;
-        JobsCeiling = 10;
+        Cash = 50;
+        Food = 0;
+        JobsCeiling = 0;
     }
 
     //at the end of each day, calculations are made, to define the new food supply, population, money and jobs
@@ -54,6 +54,11 @@ public class City : MonoBehaviour
     {
         //each job gives the city $2
         Cash += JobsCurrent * 2;
+    }
+
+    public void DepositCash(int cash)
+    {
+        Cash += cash;
     }
 
     void CalculateFood()

@@ -17,9 +17,15 @@ public class Board : MonoBehaviour  {
        
     }
 
-    public bool CheckForBuildingAtPosition(Vector3 position)
+    public Building CheckForBuildingAtPosition(Vector3 position)
     {
-        return buildings[(int)position.x, (int)position.z] != null;
+        return buildings[(int)position.x, (int)position.z];
+    }
+
+    public void RemoveBuilding(Vector3 position)
+    {
+        Destroy(buildings[(int)position.x, (int)position.z].gameObject);
+        buildings[(int)position.x, (int)position.z] = null;
     }
 
     //building position
