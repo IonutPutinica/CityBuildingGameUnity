@@ -69,7 +69,7 @@ public class City : MonoBehaviour
     void CalculatePopulation()
     {
         //every house gives a possible 5 extra population
-        PopulationCeiling = buildingCounts[0] * 5;
+        PopulationCeiling = buildingCounts[1] * 5;
         //the below part calculates if the player gains population or not
         if(Food>=PopulationCurrent && PopulationCurrent< PopulationCeiling)
         {
