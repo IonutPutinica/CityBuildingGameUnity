@@ -22,8 +22,7 @@ public class City : MonoBehaviour
     {
         uiController = GetComponent<UIController>();
         Cash = 50;
-        Food = 0;
-        JobsCeiling = 0;
+       
     }
 
     //at the end of each day, calculations are made, to define the new food supply, population, money and jobs
