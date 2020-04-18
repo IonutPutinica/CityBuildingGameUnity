@@ -58,6 +58,7 @@ public class BuildingHandler : MonoBehaviour
                         city.buildingCounts[selectedBuilding.id]++;
                         //adding the building to the world
                         board.AddBuilding(selectedBuilding, gridPosition);
+                       
 
                     }
                 }
@@ -67,6 +68,7 @@ public class BuildingHandler : MonoBehaviour
                     city.DepositCash(board.CheckForBuildingAtPosition(gridPosition).cost / 2);
                     board.RemoveBuilding(gridPosition);
                     uiController.UpdateCityData();
+                
                 }
             }
         }

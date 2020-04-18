@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\BuildingHandler.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\City.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/CityBuildingGameUnity/CityBuildingGameUnity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

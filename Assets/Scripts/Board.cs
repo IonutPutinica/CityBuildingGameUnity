@@ -14,6 +14,7 @@ public class Board : MonoBehaviour  {
     {
         //quaterion gives the object the rotation that it actually has 
         buildings[(int)position.x, (int)position.z] = Instantiate(building, position, Quaternion.identity);
+        SoundManager.PlaySound ("build");
        
     }
 
@@ -26,6 +27,7 @@ public class Board : MonoBehaviour  {
     {
         Destroy(buildings[(int)position.x, (int)position.z].gameObject);
         buildings[(int)position.x, (int)position.z] = null;
+        SoundManager.PlaySound ("sell");
     }
 
     //building position

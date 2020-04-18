@@ -25,6 +25,7 @@ public class UIController : MonoBehaviour
           city.JobsCurrent, city.JobsCeiling,
           city.Cash, (int)city.PopulationCurrent, 
           (int)city.PopulationCeiling, (int)city.Food, city.JobsCurrent * 2);
+       
     }
 
     public void UpdateDayCount()
