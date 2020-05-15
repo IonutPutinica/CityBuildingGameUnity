@@ -14,9 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   achievements:
     array:
-    - id: HelloWorld
-      title: asdasd
-      description: 
-    - id: GoodBye
-      title: asdasd
-      description: 
+    - id: 1
+      title: Achievement Unlocked
+      description: Have 10 buildings

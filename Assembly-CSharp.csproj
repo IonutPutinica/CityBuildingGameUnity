@@ -60,7 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Achievements.cs" />
     <Compile Include="Assets\Reorderable List\Attributes\ReorderableAttribute.cs" />
     <Compile Include="Assets\Reorderable List\ReorderableArray.cs" />
     <Compile Include="Assets\Scripts\Achievement.cs" />

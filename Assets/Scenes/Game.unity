@@ -1734,6 +1734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79db881e3b981e4585c13535565ac37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   city: {fileID: 723922310}
   uiController: {fileID: 723922312}
   buildings:
@@ -2599,7 +2600,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Where the title goes
+  m_Text: Start a new city!
 --- !u!222 &1492406930
 CanvasRenderer:
   m_ObjectHideFlags: 0

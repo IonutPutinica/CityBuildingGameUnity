@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BuildingHandler : MonoBehaviour
 {
-
+    [SerializeField]
+    private Animator anim;
     [SerializeField]
     private City city;
     [SerializeField]
@@ -80,5 +81,10 @@ public class BuildingHandler : MonoBehaviour
     {
         selectedBuilding = buildings[building];
         Debug.Log("Selected building: " + selectedBuilding.buildingName);
+    }
+
+    public void EnableAchievement()
+    {
+        anim.SetTrigger("Appear");
     }
 }
