@@ -60,6 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Achievements.cs" />
+    <Compile Include="Assets\Reorderable List\Attributes\ReorderableAttribute.cs" />
+    <Compile Include="Assets\Reorderable List\ReorderableArray.cs" />
+    <Compile Include="Assets\Scripts\Achievement.cs" />
+    <Compile Include="Assets\Scripts\AchievementDatabase.cs" />
+    <Compile Include="Assets\Scripts\AchievementDatabaseEditor.cs" />
     <Compile Include="Assets\Scripts\BackToMenuScript.cs" />
     <Compile Include="Assets\Scripts\Board.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
